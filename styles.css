@@ -1,0 +1,154 @@
+:root {
+    --background: #222324;
+    --highlight: #444546;
+    --text: aliceblue;
+}
+
+.html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+* {
+    scroll-behavior: smooth;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+body {
+    padding-bottom: 50px;
+}
+
+header {
+    margin: 0;
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header-img {
+    height: 50%;
+    width: 140px;
+    margin: auto 0;
+    padding-left: 10px;
+    left: 10px;
+}
+
+#nav-bar ul {
+    width: 50vw;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-bar li {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#nav-bar ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.nav-link {
+    text-decoration: none;
+    display: block;
+}
+
+.content-container {
+    margin-top: 80px;
+    padding-top: 20px;
+}
+
+hr {
+    border-radius: 30%;
+    margin: 0 50px;
+}
+
+#disclaimer {
+    text-align: center;
+    padding: 5px 0;
+    font-size: 1.1rem;
+}
+
+#trailer {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#video {
+    width: 85vw;
+    height: 50vw;
+}
+
+h2 {
+    padding-top: 30px;
+}
+
+#about {
+    margin-top: -10px;
+}
+
+#about p:nth-of-type(1) {
+    text-align: center;
+}
+
+#about p:not(:first-of-type) {
+    font-style: italic;
+    opacity: 60%;
+}
+
+#about p:not(:first-of-type)::before {
+    content: "|";
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+}
+
+#email {
+    background-color: var(--text);
+    width: 250px;
+    height: 25px;
+    border: 1px solid var(--highlight);
+    border-radius: 5px;
+}
+
+#email::placeholder {
+    color: var(--background);
+    opacity: 80%;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+#submit {
+    border: none;
+    background-color: var(--highlight);
+    font-weight: bold;
+}
+
+#submit:hover {
+    background-color: gray;
+    color: var(--highlight);
+}
+
+@media (max-width: 400px) {
+    .nav-link {
+        display: none;
+    }
+}
