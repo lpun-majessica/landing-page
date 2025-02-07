@@ -42,7 +42,8 @@ header {
 
 #nav-bar ul {
     width: 50vw;
-    padding-right: 50px;
+    max-width: 500px;
+    padding-right: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -100,8 +101,8 @@ h2 {
     margin-top: -10px;
 }
 
-#about p:nth-of-type(1) {
-    text-align: center;
+.indent {
+    padding: 15px 50px;
 }
 
 #about p:not(:first-of-type) {
